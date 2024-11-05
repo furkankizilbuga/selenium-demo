@@ -4,16 +4,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-public class NameEmail {
-
-    private WebDriver driver;
+public class NameEmail extends Component {
 
     private By firstName = By.id("firstName");
     private By lastName = By.id("lastName");
     private By userEmail = By.id("userEmail");
 
     public NameEmail(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     public void setFirstName(String input) {
