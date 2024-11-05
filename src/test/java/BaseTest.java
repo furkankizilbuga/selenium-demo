@@ -1,4 +1,3 @@
-import org.example.entity.NameEmail;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.TestInstance;
@@ -9,7 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class BaseTest {
 
     protected WebDriver driver;
-    protected NameEmail nameEmail;
 
     @BeforeAll
     public void setup() {
@@ -17,7 +15,6 @@ public class BaseTest {
         System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("https://demoqa.com/automation-practice-form");
-        nameEmail = new NameEmail(driver);
     }
 
     @AfterAll
