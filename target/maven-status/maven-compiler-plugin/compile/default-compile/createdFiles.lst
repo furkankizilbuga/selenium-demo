@@ -1,2 +1,4 @@
+org\example\entity\Gender.class
 org\example\Main.class
-org\example\entity\FormPage.class
+org\example\entity\NameEmail.class
+org\example\entity\Component.class
